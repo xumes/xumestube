@@ -10,10 +10,10 @@ export const buscaVideoRequest = () => {
     }
 }
 
-export const buscaVideoSucess = (data) => {
+export const buscaVideoSucess = (videos) => {
     return {
         type: 'BUSCA_VIDEO_SUCCESS',
-        data,
+        videos,
         carregando: false,
         erro: false
     }
