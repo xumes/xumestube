@@ -18,7 +18,9 @@ class SearchBar extends Component {
 
     render() {
         return (
-            <input type='text' onKeyDown={(e) => this.pesquisaTermo(e)} />
+            <div className='search-bar'>
+                <input type='text' onKeyDown={(e) => this.pesquisaTermo(e)} />
+            </div>
         )
     }
 }
