@@ -14,7 +14,6 @@ class SearchBar extends Component {
             console.log(termo)
             this.props.buscaVideo(termo)
         }
-
     }
 
     render() {
