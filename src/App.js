@@ -5,6 +5,7 @@ import './App.css';
 import SearchBar from './componentes/SearchBar';
 import store from './store'
 import VideoList from './componentes/VideoList';
+import VideoPlayer from './componentes/VideoPlayer';
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
         <div className='container'>
           <SearchBar />
           <VideoList />
+          <VideoPlayer />
         </div>
       </Provider>
     );
