@@ -1,6 +1,7 @@
 import youtubeSearch from 'youtube-api-v3-search';
+import YTApi from './../../api'
 
-const API_KEY = 'AIzaSyD01231HDFRLa9B6iwVWORGI5SRexxKXSk'
+const API_KEY = YTApi
 
 export const buscaVideoRequest = () => {
     return {
