@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div>
+        <div className='container'>
           <SearchBar />
           <VideoList />
         </div>
