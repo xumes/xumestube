@@ -31,7 +31,7 @@ export const buscaVideo = (termo) => {
     return dispatch => {
         dispatch(buscaVideoRequest())
         youtubeSearch(API_KEY, { q: termo })
-            .then(({items}) => { dispatch(buscaVideoSucess(items)) })
+            .then((data) => { dispatch(buscaVideoSucess(data.items)) })
             .catch(() => dispatch(buscaVideoError()))
     }
 }

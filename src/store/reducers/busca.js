@@ -16,7 +16,7 @@ export default function busca(state = INITIAL_STATE, action) {
         case 'BUSCA_VIDEO_SUCCESS':
             return {
                 carregando: false,
-                videos: action.data,
+                videos: action.videos,
                 erro: false
             }
 
