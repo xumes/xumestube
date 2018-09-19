@@ -1,10 +1,14 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Embed } from 'semantic-ui-react'
+import { Embed, Advertisement } from 'semantic-ui-react'
 
 const VideoPlayer = props => {
     return (
         <div className='video-player'>
+        {
+        
+        !props.video.id && <Advertisement unit='top banner' test='Escolha um video para reproduzir' />
+        }
             {
                 props.video && props.video.snippet && (
                     <div>
