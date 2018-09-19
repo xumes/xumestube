@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Segment, Input } from 'semantic-ui-react'
 
 import { buscaVideo } from './../store/actions/busca-video'
 
 class SearchBar extends Component {
     constructor(props) {
         super(props)
+
+        //on load
+        this.props.buscaVideo('Xumes Udemy')
     }
 
     pesquisaTermo = (e) => {
@@ -19,7 +23,9 @@ class SearchBar extends Component {
     render() {
         return (
             <div className='search-bar'>
-                <input type='text' onKeyDown={(e) => this.pesquisaTermo(e)} />
+                <Segment stacked>
+                    <Input icon='search' size='large' placeholder='Search...' onKeyDown={(e) => this.pesquisaTermo(e)} />
+                </Segment>
             </div>
         )
     }
