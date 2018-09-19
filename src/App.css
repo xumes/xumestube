@@ -16,12 +16,17 @@
 
 .video-player {
   grid-area: video-player;
-  background: blue;
+  background: lightslategrey;
 }
 
 .video-list {
   grid-area: video-list;
   background: yellow;
+}
+
+.video-titulo {
+  font-weight: 400;
+  color: bisque;
 }
 
 @keyframes App-logo-spin {
