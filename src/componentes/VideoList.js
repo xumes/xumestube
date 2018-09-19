@@ -11,10 +11,6 @@ class VideoList extends Component {
         this.renderVideo = this.renderVideo.bind(this)
     }
 
-    carregaVideo(video) {
-
-    }
-
     renderVideo(video) {
         return (
             <List animated verticalAlign='middle'>
@@ -30,8 +26,7 @@ class VideoList extends Component {
 
     render() {
         return (
-
-            <div className='video-list'><h2>Lista de Videos </h2>
+            <div className='video-list'>
                 {
                     this.props.carregando && (<Dimmer active inverted>
                         <Loader size='medium'>Loading</Loader>

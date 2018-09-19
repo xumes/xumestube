@@ -5,7 +5,6 @@ import { Embed } from 'semantic-ui-react'
 const VideoPlayer = props => {
     return (
         <div className='video-player'>
-            <h2>Video Player</h2>
             {
                 props.video && props.video.snippet && (
                     <div>
