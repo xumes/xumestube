@@ -1,4 +1,6 @@
 
 ## Novo curso da Udemy a caminho
 
-Aguarde ...
+### Do Zero ao Redux
+
+Aguarde ... estamos em fase final...
